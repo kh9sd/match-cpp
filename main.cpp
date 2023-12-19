@@ -1,7 +1,6 @@
 #include "match.h"
 #include <iostream>
 #include <vector>
-#include <typeinfo>
 #include <variant>
 #include <string>
 
