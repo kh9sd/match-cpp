@@ -5,3 +5,5 @@ struct Overload : Ts...
 };
 template <class... Ts>
 Overload(Ts...) -> Overload<Ts...>;
+
+#define STRICT(type, id_name) std::same_as<type> auto id_name

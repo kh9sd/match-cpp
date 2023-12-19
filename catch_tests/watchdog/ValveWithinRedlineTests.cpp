@@ -37,22 +37,22 @@ TEST_CASE("ValveRedline test condition", "[unit]")
 
     auto bullshit = Overload{
         // (2)
-        [](std::same_as<char> auto)
+        [](STRICT(char, ))
         { return dogshit::CHAR; },
 
-        [](std::same_as<long int> auto)
+        [](STRICT(long int, ))
         { return dogshit::LONG; },
 
-        [](std::same_as<float> auto)
+        [](STRICT(float, ))
         { return dogshit::FLOAT; },
 
-        [](std::same_as<int> auto)
+        [](STRICT(int, ))
         { return dogshit::INT; },
 
-        [](std::same_as<double> auto)
+        [](STRICT(double, ))
         { return dogshit::DOUBLE; },
 
-        [](std::same_as<long long int> auto)
+        [](STRICT(long long int, ))
         { return dogshit::LONG_LONG; }
 
     };
